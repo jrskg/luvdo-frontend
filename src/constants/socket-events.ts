@@ -1,0 +1,41 @@
+export const SOCKET_EVENTS = {
+  // Client → Server
+  CREATE_ROOM: 'create_room',
+  CREATE_BOT_GAME: 'create_bot_game',
+  JOIN_ROOM: 'join_room',
+  LEAVE_ROOM: 'leave_room',
+  PLAYER_READY: 'player_ready',
+  ROLL_DICE: 'roll_dice',
+  MOVE_TOKEN: 'move_token',
+  SEND_REACTION: 'send_reaction',
+  SEND_GIFT: 'send_gift',
+  SEND_SECRET_MESSAGE: 'send_secret_message',
+  SET_GAME_RULE: 'set_game_rule',
+  UPDATE_GAME_CONFIG: 'update_game_config',
+  REQUEST_STATE_SYNC: 'request_state_sync',
+  UPDATE_MOOD: 'update_mood',
+
+  // WebRTC Signaling
+  WEBRTC_OFFER: 'webrtc_offer',
+  WEBRTC_ANSWER: 'webrtc_answer',
+  WEBRTC_ICE_CANDIDATE: 'webrtc_ice_candidate',
+  WEBRTC_LEAVE: 'webrtc_leave',
+
+  // Server → Client
+  ROOM_JOINED: 'room_joined',
+  PLAYER_JOINED: 'player_joined',
+  GAME_STARTED: 'game_started',
+  DICE_ROLLED: 'dice_rolled',
+  TOKEN_MOVED: 'token_moved',
+  STATE_UPDATED: 'state_updated',
+  STATE_SYNC: 'state_sync',
+  PLAYER_TURN: 'player_turn',
+  REACTION_RECEIVED: 'reaction_received',
+  GIFT_RECEIVED: 'gift_received',
+  SECRET_MESSAGE_TRIGGERED: 'secret_message_triggered',
+  GAME_FINISHED: 'game_finished',
+  GAME_ERROR: 'game_error',
+  PLAYER_DISCONNECTED: 'player_disconnected',
+  PLAYER_RECONNECTED: 'player_reconnected',
+  MOOD_UPDATED: 'mood_updated',
+} as const;

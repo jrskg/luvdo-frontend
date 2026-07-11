@@ -63,3 +63,47 @@ export const Spacing = {
 
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
 export const MaxContentWidth = 800;
+
+// Romantic + gaming palette — deep purple cosmos with hot pink accents
+export const T = {
+  // Backgrounds
+  bg:         '#130025',   // deepest background
+  bgSurface:  '#1e003d',   // cards, panels
+  bgElevated: '#2b0554',   // elevated/active surfaces
+  bgInput:    '#170030',   // input fields
+
+  // Brand accent
+  pink:      '#e91e8c',
+  pinkLight: '#ff79c6',
+  pinkDim:   'rgba(233,30,140,0.12)',
+
+  // Supporting
+  purple:      '#7c3aed',
+  purpleLight: '#a78bfa',
+  lavender:    '#c4b5fd',
+
+  // Text
+  text:      '#ffffff',
+  textSub:   '#c4b5fd',   // lavender secondary
+  textMuted: '#7c6a9a',
+
+  // Borders
+  border:    '#2e1060',
+  borderAct: '#7c3aed',
+
+  // Status
+  success: '#10b981',
+  error:   '#ef4444',
+  gold:    '#f59e0b',
+};
+
+// Board-specific vivid colors
+export const BOARD_COLORS = {
+  red:    '#e53935',
+  green:  '#43a047',
+  yellow: '#fdd835',
+  blue:   '#1e88e5',
+  white:  '#ffffff',
+  cream:  '#fafafa',
+  boardBorder: '#e8d5ff',
+};

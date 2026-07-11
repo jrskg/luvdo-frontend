@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.skg_suraj.luvdofrontend"
     },
     "web": {
       "output": "static",
@@ -36,9 +37,16 @@
         }
       ]
     ],
+    "newArchEnabled": false,
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5e9be580-6fe3-428c-bd3b-f07b8a530c7a"
+      }
     }
   }
 }
